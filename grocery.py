@@ -34,17 +34,17 @@ class Solution:
         # type str2: string
         # return: list
         
-        new = set(str2) - set(str1)
-        shop = l1 + list(new)
-        return shop
-       
-
+        one = str1.split(" ")
+        two = str2.split(" ")
+        lst = []
+        lst.append(one,two)
+        return lst
         
         pass
 
 def main():
-    string1 = input().strip()
-    string2 = input().strip()
+    string1 = input().split()
+    string2 = input().split()
 
     tc1 = Solution()
     ans = tc1.my_grocery_list(string1,string2)
