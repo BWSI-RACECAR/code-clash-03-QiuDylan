@@ -36,8 +36,10 @@ class Solution:
         shop_list = []
         str3 = str1 + str2
         shop_list.append(str3)
-        res = list(OrderedDict.fromkeys(shop_list))
-        return list(res.split())
+        
+       
+
+        return shop_list
         pass
 
 def main():
