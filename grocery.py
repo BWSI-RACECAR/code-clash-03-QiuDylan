@@ -34,17 +34,24 @@ class Solution:
         # type str2: string
         # return: list
         
-        one = str1.split(" ")
-        two = str2.split(" ")
-        lst = []
-        lst.append(one,two)
-        return lst
-        
+        shop =[]
+        one = str1.split(' ')
+        one[len(one)- 1] = one[len(one) - 1].strip()
+        two = str2.split(' ')
+        two[len(two)- 1] = two[len(two) - 1].strip()
+        for i in one:
+            if i not in shop and i != ' ':
+                shop.append(i)
+        for i in two:
+            if i not in shop and i != ' ':
+                shop.append(i)
+        return shop 
+
         pass
 
 def main():
-    string1 = input().split()
-    string2 = input().split()
+    string1 = input()
+    string2 = input()
 
     tc1 = Solution()
     ans = tc1.my_grocery_list(string1,string2)
