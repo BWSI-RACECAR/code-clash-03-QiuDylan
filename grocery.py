@@ -40,10 +40,10 @@ class Solution:
         two = str2.split(' ')
         two[len(two)- 1] = two[len(two) - 1].strip()
         for i in one:
-            if i not in shop and i != ' ':
+            if i not in shop and i != '':
                 shop.append(i)
         for i in two:
-            if i not in shop and i != ' ':
+            if i not in shop and i != '':
                 shop.append(i)
         return shop 
 
