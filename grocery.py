@@ -37,7 +37,7 @@ class Solution:
         str3 = str1 + str2
         shop_list.append(str3)
         res = list(OrderedDict.fromkeys(shop_list))
-        return res.split()
+        return list(res.split())
         pass
 
 def main():
