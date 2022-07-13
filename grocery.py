@@ -34,7 +34,7 @@ class Solution:
         # type str2: string
         # return: list
         
-        new = str2 - str1
+        new = set(str2) - set(str1)
         shop = l1 + list(new)
         return shop
        
