@@ -33,13 +33,13 @@ class Solution:
         # type str1:string
         # type str2: string
         # return: list
-        shop_list = []
-        str3 = str1 + str2
-        shop_list.append(str3)
         
+        new = str2 - str1
+        shop = l1 + list(new)
+        return shop
        
 
-        return shop_list
+        
         pass
 
 def main():
